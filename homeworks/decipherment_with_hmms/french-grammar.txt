@@ -1,0 +1,85 @@
+# Rules
+S -> NP VP    				#  Faux: il mange   (2) le chat mange le poisson (27) Je mange les.
+S -> NP VP S 				# le chat noir mange le poisson  (25) Les noirs chats mangent le poisson  (26) Les poissons mangent les chats
+S -> VP NP    				# (1) (4) je/tu/il regarde la télévision / Jonathan regarde la television (24) je mange le poisson
+S -> NP	
+S -> VP  
+
+NP -> DT-M-Sg  N-M-Sg           	# (8) le chat
+NP -> DT-F-Sg  N-F-Sg           	# (9) la television
+NP -> DT-Pl  N-Pl              	 	# (10) les chats  # (11) les televisions 
+NP -> N-Prop                   		# (12) Jonathan
+
+VP -> PR-1Sg  DO-1Sg  V-1-SG 		# je taime 
+VP -> PR-2Sg  DO-2Sg  V-2Sg 	
+VP -> PR-3Sg  DO-M-3Sg  V-3Sg		# il le regarde 
+VP -> PR-3Sg  DO-M-3Sg  V-3Sg     	# il la regarde 
+VP -> PR-1Pl  DO-1Pl  V-1Pl	
+VP -> PR-2Pl  DO-2Pl  V-2Pl 	
+VP -> PR-3Pl  DO-3Pl  V-3Pl 
+					
+NP -> DT-M-Sg  N-M-Sg  A-M-Sg-Post  	# (15) le chat noir(16) le chat heureux  
+NP -> DT-Pl  N-M-Pl  A-M-Pl-Post  	# (21) les chats noirs 
+NP -> DT-F-Sg  N-F-Sg  A-F-Sg-Post  	# (20) la semaine derniere (22) la television noire
+NP -> DT-Pl  N-F-Pl  A-F-Pl-Post  	# (23) les televisions noires
+
+NP -> DT-M-Sg  A-M-Sg-Pre  N-M-Sg    	# (17) le beau chat  (18) le joli chat 
+NP -> DT-Pl  A-M-Pl-Pre  N-M-Pl    	# les beaux chat
+NP -> DT-F-Sg  A-F-Sg-Pre  N-F-Sg     	# (19) la derniere semaine
+NP -> DT-Pl  A-F-Pl-Pre  N-F-Pl    	# les dernieres semaines
+
+NP -> N-M-Sg  A-M-Sg-Post	 	# belle maison 
+NP -> N-M-Pl  A-M-Pl-Post 	
+NP -> N-F-Sg  A-F-Sg-Post	
+NP -> N-F-Pl  A-F-Pl-Post 		
+
+NP -> A-M-Sg-Pre  N-M-Sg 	        # joli chat	# TODO additional and …maybe wrong too?
+NP -> A-M-Pl-Pre  N-M-Pl	
+NP -> A-F-Sg-Pre  N-F-Sg		 
+NP -> A-F-Pl-Pre  N-F-Pl		 
+
+VP -> PR-1Sg  V-1Sg 		#  je mange
+VP -> PR-2Sg  V-2Sg 		# tu manges 
+VP -> PR-3Sg  V-3Sg 		# il mange
+VP -> PR-1Pl  V-1Pl 	
+VP -> PR-2Pl  V-2Pl 	
+VP -> PR-3Pl  V-3Pl 	
+
+VP -> V-1Sg   
+VP -> V-2Sg   
+VP -> V-3Sg  
+VP -> V-1Pl  
+VP -> V-2Pl  
+VP -> V-3Pl  
+
+PR-1Sg -> je
+PR-2Sg -> tu
+PR-3Sg -> il
+PR-1Pl -> nous
+PR-2Pl -> vous
+PR-3Pl -> ils
+
+N-Prop -> Jonathan | Montréal  	
+N-M-Sg -> chat  | poisson | semaine  
+N-F-Sg -> television 			
+N-M-Pl -> chats | poissons | semaines 
+N-F-Pl -> télévisions 			
+
+V-1Sg -> regarde   | mange
+V-2Sg -> regardes  | manges
+V-3Sg -> regarde   | mange
+V-1Pl -> regardons | mangeons
+V-2Pl -> regardez  | mangez
+V-3Pl -> regardent | mangent
+
+DO-1Sg -> me | ma 		# (m’)
+DO-2Sg -> te
+DO-M-3Sg -> le 
+DO-F-3Sg -> la
+DO-1Pl -> nous
+DO-2Pl -> vous
+DO-3Pl -> les 			# leur
+
+DT-M-Sg -> le    		# can add demontratif determiner (ce, cet), cardinal determiner (un)
+DT-F-Sg -> la			# cettes | une 
+DT-Pl   -> les			# ces 

@@ -1,0 +1,1 @@
+this repo contain project and assignments for the course natural language processing in Mcgill 2019.
